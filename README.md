@@ -30,7 +30,7 @@ git clone https://github.com/ST-Balance/ST-Balance.git
 * It takes a few seconds.
 ## Demo
 
-We provide one of the smallest datasets, PEMS08, as a demo, which is located in the `PEMS_Covid19/datasets` folder. Enter the `PEMS Covid19` directory and run `demo.sh`. 
+We provide one of the smallest datasets, PEMS08, as a demo, which is located in the `PEMS_Covid19/datasets` folder. Enter the `PEMS_Covid19` directory and run `demo.sh`. 
 
 * Linux
 
