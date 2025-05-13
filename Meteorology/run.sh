@@ -1,0 +1,2 @@
+python run.py --is_training 1 --data Global_Wind --root_path ./dataset/global_wind/ --pos_filename ./dataset/global_wind/ --model_id 0 --des Exp --itr 1
+python run.py --is_training 1 --data Global_Temp --root_path ./dataset/global_temp/ --pos_filename ./dataset/global_temp/ --model_id 1 --des Exp --itr 1

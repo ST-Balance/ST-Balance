@@ -1,0 +1,16 @@
+SD:
+  his_len: 672
+  nhead: 2
+  bs: 32
+GBA:
+  his_len: 1344
+  nhead: 1
+  bs: 32
+GLA:
+  his_len: 1344
+  nhead: 1
+  bs: 32
+CA:
+  his_len: 1344
+  nhead: 1
+  bs: 8
