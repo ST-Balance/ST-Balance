@@ -2,10 +2,7 @@ import os
 import numpy as np
 
 import sys
-import networkx as nx
 import yaml
-from karateclub import GraRep, HOPE
-from node2vec import Node2Vec
 
 # from umap import UMAP
 
