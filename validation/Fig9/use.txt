@@ -1,3 +1,0 @@
-使用时数据集放置位置和Readme中放置位置相同,
-修改是否使用长窗口修改if_enhance参数即可，1是使用，0是不使用，
-具体参数位置对于largeST中在main.py文件中，PEMS中在baseline数据集对应的配置文件中
