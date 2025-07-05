@@ -1,1 +1,1 @@
-python train.py -c baselines/PEMS08.py
+python train.py -c config/PEMS08.py
