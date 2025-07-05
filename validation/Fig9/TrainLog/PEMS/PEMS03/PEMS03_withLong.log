@@ -1,0 +1,14 @@
+2025-03-18 16:53:54,814 - easytorch-inference - INFO - Loading Checkpoint from 'checkpoints/PEMS03/PEMS03.pt'
+2025-03-18 16:54:05,120 - easytorch-inference - INFO - Evaluate best model on test data for horizon 1, Test MAE: 11.817126, Test RMSE: 18.498308, Test MAPE: 0.117707, Test WAPE: 0.067936, Test MSE: 342.187439
+2025-03-18 16:54:05,896 - easytorch-inference - INFO - Evaluate best model on test data for horizon 2, Test MAE: 12.424659, Test RMSE: 20.690022, Test MAPE: 0.125959, Test WAPE: 0.071437, Test MSE: 428.077026
+2025-03-18 16:54:06,250 - easytorch-inference - INFO - Evaluate best model on test data for horizon 3, Test MAE: 12.908795, Test RMSE: 22.046011, Test MAPE: 0.130210, Test WAPE: 0.074229, Test MSE: 486.026611
+2025-03-18 16:54:07,601 - easytorch-inference - INFO - Evaluate best model on test data for horizon 4, Test MAE: 13.280019, Test RMSE: 22.772772, Test MAPE: 0.132504, Test WAPE: 0.076371, Test MSE: 518.599121
+2025-03-18 16:54:08,091 - easytorch-inference - INFO - Evaluate best model on test data for horizon 5, Test MAE: 13.612355, Test RMSE: 23.497025, Test MAPE: 0.135110, Test WAPE: 0.078290, Test MSE: 552.110168
+2025-03-18 16:54:08,746 - easytorch-inference - INFO - Evaluate best model on test data for horizon 6, Test MAE: 13.903063, Test RMSE: 24.093801, Test MAPE: 0.136049, Test WAPE: 0.079970, Test MSE: 580.511230
+2025-03-18 16:54:09,820 - easytorch-inference - INFO - Evaluate best model on test data for horizon 7, Test MAE: 14.168003, Test RMSE: 24.635632, Test MAPE: 0.140062, Test WAPE: 0.081501, Test MSE: 606.914307
+2025-03-18 16:54:10,724 - easytorch-inference - INFO - Evaluate best model on test data for horizon 8, Test MAE: 14.423026, Test RMSE: 25.123507, Test MAPE: 0.140309, Test WAPE: 0.082976, Test MSE: 631.190613
+2025-03-18 16:54:11,522 - easytorch-inference - INFO - Evaluate best model on test data for horizon 9, Test MAE: 14.665255, Test RMSE: 25.570896, Test MAPE: 0.142002, Test WAPE: 0.084379, Test MSE: 653.870728
+2025-03-18 16:54:12,481 - easytorch-inference - INFO - Evaluate best model on test data for horizon 10, Test MAE: 14.876008, Test RMSE: 25.948519, Test MAPE: 0.143858, Test WAPE: 0.085600, Test MSE: 673.325623
+2025-03-18 16:54:13,248 - easytorch-inference - INFO - Evaluate best model on test data for horizon 11, Test MAE: 15.082304, Test RMSE: 26.354809, Test MAPE: 0.145977, Test WAPE: 0.086796, Test MSE: 694.575928
+2025-03-18 16:54:14,145 - easytorch-inference - INFO - Evaluate best model on test data for horizon 12, Test MAE: 15.307158, Test RMSE: 26.780025, Test MAPE: 0.148060, Test WAPE: 0.088099, Test MSE: 717.169739
+2025-03-18 16:54:16,840 - easytorch-inference - INFO - Result <test>: [test_time: 21.69 (s), test_MAE: 13.872313, test_RMSE: 23.952311, test_MAPE: 0.136484, test_WAPE: 0.079797, test_MSE: 573.713196]
