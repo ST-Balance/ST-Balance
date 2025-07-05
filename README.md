@@ -103,17 +103,23 @@ python experiments/train.py -c baselines/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_P
 All operations must be performed in the LargeST folder after downloading and placing the dataset.
 
 #### Training
+````shell
 python main.py --dataset ${DATA_SET_NAME} --mode 'train'
+````
 Example:
+````shell
 python main.py --dataset SD --mode 'train'
-
+````
 Note: Parameter configurations can be viewed in main.py and config/ST-Balance.yaml. Hyperparameter configurations are available in src/utils/args.py.
 
 #### Testing
+````shell
 python main.py --dataset ${DATA_SET_NAME} --mode 'test'
+````
 Example:
+````shell
 python main.py --dataset SD --mode 'test'
-
+````
 ## Meteorology Dataset
 
 ### Folder Structure
@@ -126,8 +132,13 @@ python main.py --dataset SD --mode 'test'
 All operations must be performed in the Meteorology folder after downloading and extracting the dataset.
 
 #### Training
+````shell
 python run.py --is_training 1 -root_path ./dataset/global_wind/ --data Global_Win
+````
 Note: Parameter configurations can be viewed in run.py.
 
 #### Testing
+````shell
 python run.py --is_training 0 -root_path ./dataset/global_wind/ --data Global_Win
+````
+
