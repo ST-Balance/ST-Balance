@@ -61,6 +61,25 @@ To ensure a fair comparison of methods across different domains, we adopt variou
 
 Traffic Flow:
 * For the PEMS series datasets, we use [BasicTS](https://github.com/GestaltCogTeam/BasicTS) as the baseline framework for experiments (see the PEMS_Covid19 folder).
+* For running the PEMS Covid19 dataset, you need to create a folder called datasets within the PEMS Covid19 directory and place the downloaded data inside it. The file structure should be as follows:
+* ```shell
+    -PEMS Covid19
+     -datasets 
+      -PEMS08
+    ```
+* All subsequent operations should be performed after completing the download and placing the dataset within the PEMS Covid19 folder.
+For training, execute the following command:
+* ```shell
+python train.py -c baselines/${CONFIG_NAME}.py --gpus '0'
+    ```
+* For example:
+* ```shell
+python train.py -c baselines/PEMS08.py --gpus '0'
+    ```
+* For testing, execute the following command:
+* ```shell
+python experiments/train.py -c baselines/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
+    ```
 * For the LargeST series datasets, we adopt the original authors' publicly available code [LargeST](https://github.com/liuxu77/LargeST) as the experimental baseline (see the LargeST folder).
 
 Meteorology:
