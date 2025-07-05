@@ -61,25 +61,28 @@ To ensure a fair comparison of methods across different domains, we adopt variou
 
 Traffic Flow:
 * For the PEMS series datasets, we use [BasicTS](https://github.com/GestaltCogTeam/BasicTS) as the baseline framework for experiments (see the PEMS_Covid19 folder).
-# Dataset Processing Instructions
-
 ## PEMS Covid19 Dataset
-
 ### Folder Structure
+````shell
 -PEMS Covid19
   -datasets 
     -PEMS08
-
+    ````
 ### Operations
 All operations must be performed in the PEMS Covid19 folder after downloading and placing the dataset.
 
 #### Training
+````shell
 python train.py -c baselines/${CONFIG_NAME}.py --gpus '0'
+````
 Example:
+````shell
 python train.py -c baselines/PEMS08.py --gpus '0'
-
+````
 #### Testing
+````shell
 python experiments/train.py -c baselines/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
+````
 Meteorology:
 * We use the original authors' publicly available code [Corrformer](https://github.com/thuml/Corrformer) as the experimental baseline.
 
