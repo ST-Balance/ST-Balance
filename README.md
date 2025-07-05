@@ -8,7 +8,19 @@ All experiments were conducted on a computational server equipped with an Intel(
 #### OS Requirements
 Our experiments are all running in the system:
 * Linux: Ubuntu 18
+#### Python Version
+Python 3.9 or higher is required
+#### CUDA VERSION
+our cuda version is 11.4
+#### PytORCH Dependencies
+````
+pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+````
 #### Python Dependencies
+After ensuring PyTorch is installed correctly, you can install the other dependencies:
+````
+pip install -r requirements.txt
+````
 ST-Balance mainly depends on the Python scientific stack.
 ````
 easy-torch==1.3.2
