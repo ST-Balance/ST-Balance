@@ -22,6 +22,13 @@ sympy==1.10.1
 setproctitle==1.3.2
 scikit-learn==1.0.2
 einops==0.6.1
+matplotlib==3.8.2
+numpy==1.22.4
+networkx==2.6.3
+pyyaml==6.0.1
+karateclub==1.3.3
+node2vec==0.4.6
+umap-learn==0.5.3
 ````
 ## Installation Guide
 ````
