@@ -1,0 +1,3 @@
+使用时需要将下载的数据放入data中，
+然后使用例如python entropy_slide.py --dataset "['PEMS08', 'SD']" --horizon "[1, 7]"
+两个参数均为列表

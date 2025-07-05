@@ -1,0 +1,1 @@
+python entropy_slide.py --dataset "['PEMS08', 'SD']" --horizon "[1, 7]"
