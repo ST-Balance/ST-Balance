@@ -61,13 +61,21 @@ To ensure a fair comparison of methods across different domains, we adopt variou
 
 Traffic Flow:
 * For the PEMS series datasets, we use [BasicTS](https://github.com/GestaltCogTeam/BasicTS) as the baseline framework for experiments (see the PEMS_Covid19 folder).
-## PEMS Covid19 Dataset
+Meteorology:
+* We use the original authors' publicly available code [Corrformer](https://github.com/thuml/Corrformer) as the experimental baseline.
+
+Epidemics:
+* The raw data originates from [CSSE](https://github.com/CSSEGISandData/COVID-19) and is processed within the BasicTS framework (see the PEMS_Covid19 folder).
+
+Except for the epidemic dataset, the raw and processed data can be accessed through the links above. Additionally, all processed datasets are available at this [link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV).
+
+## FOR PEMS AND Covid19 Dataset
 ### Folder Structure
 ````shell
 -PEMS Covid19
   -datasets 
     -PEMS08
-    ````
+````
 ### Operations
 All operations must be performed in the PEMS Covid19 folder after downloading and placing the dataset.
 
@@ -83,12 +91,43 @@ python train.py -c baselines/PEMS08.py --gpus '0'
 ````shell
 python experiments/train.py -c baselines/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
 ````
-Meteorology:
-* We use the original authors' publicly available code [Corrformer](https://github.com/thuml/Corrformer) as the experimental baseline.
+## LargeST Dataset
 
-Epidemics:
-* The raw data originates from [CSSE](https://github.com/CSSEGISandData/COVID-19) and is processed within the BasicTS framework (see the PEMS_Covid19 folder).
+### Folder Structure
+````shell
+-LargeST
+  -data
+    -sd
+````
+### Operations
+All operations must be performed in the LargeST folder after downloading and placing the dataset.
 
-Except for the epidemic dataset, the raw and processed data can be accessed through the links above. Additionally, all processed datasets are available at this [link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV).
+#### Training
+python main.py --dataset ${DATA_SET_NAME} --mode 'train'
+Example:
+python main.py --dataset SD --mode 'train'
 
-After downloading the data, extract the files and run `run.sh` in the respective directories (LargeST/Meteorology/PEMS_Covid19).
+Note: Parameter configurations can be viewed in main.py and config/ST-Balance.yaml. Hyperparameter configurations are available in src/utils/args.py.
+
+#### Testing
+python main.py --dataset ${DATA_SET_NAME} --mode 'test'
+Example:
+python main.py --dataset SD --mode 'test'
+
+## Meteorology Dataset
+
+### Folder Structure
+````shell
+-Meteorology
+  -dataset
+    -adj_ang.npy
+````
+### Operations
+All operations must be performed in the Meteorology folder after downloading and extracting the dataset.
+
+#### Training
+python run.py --is_training 1 -root_path ./dataset/global_wind/ --data Global_Win
+Note: Parameter configurations can be viewed in run.py.
+
+#### Testing
+python run.py --is_training 0 -root_path ./dataset/global_wind/ --data Global_Win
