@@ -46,7 +46,7 @@ umap-learn==0.5.3
 ````
 git clone https://github.com/ST-Balance/ST-Balance.git 
 ````
-* It takes a few seconds.
+* It takes about one minute.
 ## Demo
 
 We provide one of the smallest datasets, PEMS08, as a demo, which is located in the `PEMS/datasets` folder. Enter the `PEMS` directory and run `demo.sh`. Other datasets need to be decompressed or downloaded before they can be used.
