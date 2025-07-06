@@ -12,7 +12,7 @@ Our experiments are all running in the system:
 Python 3.9 or higher is required
 #### CUDA VERSION
 our cuda version is 11.4
-#### PytORCH Dependencies
+#### PyTorch Dependencies
 ````
 pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
 ````
@@ -92,7 +92,7 @@ Except for the epidemic dataset, the raw and processed data can be accessed thro
     -PEMS08
 ````
 ### Operations
-Once the dataset has been downloaded and placed in the PEMS folder, all operations should be conducted within this folder.[DataLink](https://drive.google.com/file/d/1mm-Yc3lIsUue1DBWvgOtuSBXOHOGur5g/view?usp=drive_link) 
+Once the dataset has been downloaded and placed in the PEMS folder, all operations should be conducted within this folder. [DataLink](https://drive.google.com/file/d/1mm-Yc3lIsUue1DBWvgOtuSBXOHOGur5g/view?usp=drive_link) 
 
 #### Training
 ````shell
