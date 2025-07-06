@@ -115,7 +115,7 @@ python experiments/train.py -c config/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH
     -sd
 ````
 ### Operations
-Once the dataset has been downloaded and placed in the PEMS folder, all operations should be conducted within this folder. [DataLink](https://drive.google.com/file/d/149Qs98mx9sg9lIPBjXtf6iERPPqp9Zf2/view?usp=drive_link) 
+Once the dataset has been downloaded and placed in the LargeST folder, all operations should be conducted within this folder. [DataLink](https://drive.google.com/file/d/149Qs98mx9sg9lIPBjXtf6iERPPqp9Zf2/view?usp=drive_link) 
 
 #### Training
 ````shell
