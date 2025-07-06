@@ -73,7 +73,7 @@ To ensure a fair comparison of methods across different domains, we adopt variou
 
 Traffic Flow:
 * For the PEMS series datasets, we use [BasicTS](https://github.com/GestaltCogTeam/BasicTS) as the baseline framework for experiments (see the PEMS folder).
-* For the LargeST series datasets, we adopt the original authors' publicly available code [LargeST](https://github.com/liuxu77/LargeST) as the experimental baseline (see the LargeST folder).
+* For the LargeST series datasets, we adopt the original authors' publicly available code [LargeST](https://github.com/liuxu77/LargeST/tree/main/experiments) as the experimental baseline (see the LargeST folder).
 
 Meteorology:
 * We use the original authors' publicly available code [Corrformer](https://github.com/thuml/Corrformer) as the experimental baseline.
