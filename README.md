@@ -148,13 +148,13 @@ Once the dataset has been downloaded and placed in the Meteorology folder, all o
 
 #### Training
 ````shell
-python run.py --is_training 1 -root_path ./dataset/global_wind/ --data Global_Win
+python run.py --is_training 1 --data Global_Wind --root_path ./dataset/global_wind/ --pos_filename ./dataset/global_wind/ --model_id 0 --des Exp --itr 1
 ````
 Note: Parameter configurations can be viewed in run.py.
 
 #### Testing
 ````shell
-python run.py --is_training 0 -root_path ./dataset/global_wind/ --data Global_Win
+python run.py --is_training 0 --data Global_Wind --root_path ./dataset/global_wind/ --pos_filename ./dataset/global_wind/ --model_id 0 --des Exp --itr 1
 ````
 ## FOR Covid19 Dataset
 ### Folder Structure
