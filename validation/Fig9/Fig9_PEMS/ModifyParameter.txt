@@ -1,0 +1,2 @@
+If you need to modify the length of the long window, you need to change the `seq_len` parameter on line 28 in the corresponding configuration file in the `config` folder.  
+If you want to modify whether to use the long window, you need to change the `if_enhance` parameter on line 20 in the corresponding configuration file in the `config` folder.
