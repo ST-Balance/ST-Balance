@@ -60,7 +60,7 @@ We provide one of the smallest datasets, PEMS08, as a demo, which is located in 
 * Windows
 
   * ```shell
-    python train.py -c baselines/PEMS08.py
+    python train.py -c config/PEMS08.py
     ```
 
     
@@ -93,15 +93,15 @@ All operations must be performed in the PEMS Covid19 folder after downloading an
 
 #### Training
 ````shell
-python train.py -c baselines/${CONFIG_NAME}.py --gpus '0'
+python train.py -c config/${CONFIG_NAME}.py --gpus '0'
 ````
 Example:
 ````shell
-python train.py -c baselines/PEMS08.py --gpus '0'
+python train.py -c config/PEMS08.py --gpus '0'
 ````
 #### Testing
 ````shell
-python experiments/train.py -c baselines/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
+python experiments/train.py -c config/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
 ````
 ## LargeST Dataset
 
