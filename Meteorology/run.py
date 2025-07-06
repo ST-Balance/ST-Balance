@@ -31,7 +31,7 @@ parser.add_argument('--test_features', type=str, default='M',
 parser.add_argument('--target', type=int, default=0, help='target feature in S or MS task')
 parser.add_argument('--freq', type=str, default='h',
                     help='freq for time features encoding, options:[s:secondly, t:minutely, h:hourly, d:daily, b:business days, w:weekly, m:monthly], you can also use more detailed freq like 15min or 3h')
-parser.add_argument('--checkpoints', type=str, default='./checkpoints/', help='location of model checkpoints')
+parser.add_argument('--pretrained_model', type=str, default='Global_Wind_ftM_sl48_ll24_pl24_node350_node[7, 50]_bs4_dm768_nh16_el2_dl1_df2048_fc1_fct1_fcs1_ebtimeF_dtTrue_test_0', help='location of model checkpoints')
 
 # forecasting task
 parser.add_argument('--seq_len', type=int, default=48, help='input sequence length')
