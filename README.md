@@ -81,10 +81,10 @@ Epidemics:
 
 Except for the epidemic dataset, the raw and processed data can be accessed through the links above. Additionally, all processed datasets are available at this [link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV).
 
-## FOR PEMS AND Covid19 Dataset
+## FOR PEMS Dataset
 ### Folder Structure
 ````shell
--PEMS Covid19
+-PEMS
   -datasets 
     -PEMS08
 ````
@@ -153,4 +153,25 @@ Note: Parameter configurations can be viewed in run.py.
 ````shell
 python run.py --is_training 0 -root_path ./dataset/global_wind/ --data Global_Win
 ````
+## FOR Covid19 Dataset
+### Folder Structure
+````shell
+-Covid19
+  -datasets 
+    -Covid19_US
+````
+### Operations
+All operations must be performed in the PEMS Covid19 folder after downloading and placing the dataset.
 
+#### Training
+````shell
+python train.py -c config/${CONFIG_NAME}.py --gpus '0'
+````
+Example:
+````shell
+python train.py -c config/Covid19_US.py --gpus '0'
+````
+#### Testing
+````shell
+python experiments/train.py -c config/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
+````
