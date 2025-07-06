@@ -73,13 +73,15 @@ To ensure a fair comparison of methods across different domains, we adopt variou
 
 Traffic Flow:
 * For the PEMS series datasets, we use [BasicTS](https://github.com/GestaltCogTeam/BasicTS) as the baseline framework for experiments (see the PEMS folder).
-  
+* For the LargeST series datasets, we adopt the original authors' publicly available code [LargeST](https://github.com/liuxu77/LargeST) as the experimental baseline (see the LargeST folder).
+
 Meteorology:
 * We use the original authors' publicly available code [Corrformer](https://github.com/thuml/Corrformer) as the experimental baseline.
 
 Epidemics:
 * The raw data originates from [CSSE](https://github.com/CSSEGISandData/COVID-19) and is processed within the BasicTS framework (see the Covid19 folder).
 
+## Dataset
 Except for the epidemic dataset, the raw and processed data can be accessed through the links above. Additionally, all processed datasets are available at this [link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV).
 
 ## FOR PEMS Dataset
