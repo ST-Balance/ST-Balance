@@ -138,7 +138,7 @@ python main.py --dataset SD --mode 'test'
 ````shell
 -Meteorology
   -dataset
-    -adj_ang.npy
+  -adj_ang.npy
 ````
 ### Operations
 All operations must be performed in the Meteorology folder after downloading and extracting the dataset.
