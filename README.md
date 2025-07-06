@@ -89,7 +89,7 @@ Except for the epidemic dataset, the raw and processed data can be accessed thro
     -PEMS08
 ````
 ### Operations
-All operations must be performed in the PEMS folder after downloading[link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV) and placing the dataset.
+All operations must be performed in the PEMS folder after downloading[link](https://drive.google.com/file/d/1mm-Yc3lIsUue1DBWvgOtuSBXOHOGur5g/view?usp=drive_link) and placing the dataset.
 
 #### Training
 ````shell
@@ -161,7 +161,7 @@ python run.py --is_training 0 -root_path ./dataset/global_wind/ --data Global_Wi
     -Covid19_US
 ````
 ### Operations
-All operations must be performed in the Covid19 folder after downloading[link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV) and placing the dataset.
+All operations must be performed in the Covid19 folder after downloading[link](https://drive.google.com/file/d/16PGCd2C4tgU5PbMeQXOSITx5cm-gRkRd/view?usp=drive_link) and placing the dataset.
 
 #### Training
 ````shell
