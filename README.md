@@ -90,7 +90,7 @@ Except for the epidemic dataset, the raw and processed data can be accessed thro
     -PEMS08
 ````
 ### Operations
-All operations must be performed in the PEMS folder after downloading[link](https://drive.google.com/file/d/1mm-Yc3lIsUue1DBWvgOtuSBXOHOGur5g/view?usp=drive_link) and placing the dataset.
+All operations must be performed in the PEMS folder after downloading [DataLink](https://drive.google.com/file/d/1mm-Yc3lIsUue1DBWvgOtuSBXOHOGur5g/view?usp=drive_link) and placing the dataset.
 
 #### Training
 ````shell
@@ -113,7 +113,7 @@ python experiments/train.py -c config/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH
     -sd
 ````
 ### Operations
-All operations must be performed in the LargeST folder after downloading[link](https://drive.google.com/file/d/149Qs98mx9sg9lIPBjXtf6iERPPqp9Zf2/view?usp=drive_link) and placing the dataset.
+All operations must be performed in the LargeST folder after downloading [DataLink](https://drive.google.com/file/d/149Qs98mx9sg9lIPBjXtf6iERPPqp9Zf2/view?usp=drive_link) and placing the dataset.
 
 #### Training
 ````shell
@@ -142,7 +142,7 @@ python main.py --dataset SD --mode 'test'
   -adj_ang.npy
 ````
 ### Operations
-All operations must be performed in the Meteorology folder after downloading[link](https://drive.google.com/file/d/1TG8VQGuvhGErIkNUU7JYvJIULtiLwWGs/view?usp=drive_link) and extracting the dataset.
+All operations must be performed in the Meteorology folder after downloading [DataLink](https://drive.google.com/file/d/1TG8VQGuvhGErIkNUU7JYvJIULtiLwWGs/view?usp=drive_link) and extracting the dataset.
 
 #### Training
 ````shell
@@ -162,7 +162,7 @@ python run.py --is_training 0 -root_path ./dataset/global_wind/ --data Global_Wi
     -Covid19_US
 ````
 ### Operations
-All operations must be performed in the Covid19 folder after downloading[link](https://drive.google.com/file/d/16PGCd2C4tgU5PbMeQXOSITx5cm-gRkRd/view?usp=drive_link) and placing the dataset.
+All operations must be performed in the Covid19 folder after downloading [DataLink](https://drive.google.com/file/d/16PGCd2C4tgU5PbMeQXOSITx5cm-gRkRd/view?usp=drive_link) and placing the dataset.
 
 #### Training
 ````shell
