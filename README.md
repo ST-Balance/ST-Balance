@@ -119,21 +119,21 @@ Once the dataset has been downloaded and placed in the LargeST folder, all opera
 
 #### Training
 ````shell
-python main.py --dataset ${DATA_SET_NAME} --mode 'train'
+python main.py --dataset ${DATA_SET_NAME} --mode 'train' --model_name STBalance
 ````
 Example:
 ````shell
-python main.py --dataset SD --mode 'train'
+python main.py --dataset SD --mode 'train' --model_name STBalance
 ````
 Note: Parameter configurations can be viewed in main.py and config/ST-Balance.yaml. Hyperparameter configurations are available in src/utils/args.py.
 
 #### Testing
 ````shell
-python main.py --dataset ${DATA_SET_NAME} --mode 'test'
+python main.py --dataset ${DATA_SET_NAME} --mode 'test' --model_name STBalance
 ````
 Example:
 ````shell
-python main.py --dataset SD --mode 'test'
+python main.py --dataset SD --mode 'test' --model_name STBalance
 ````
 ## For Meteorology Dataset
 
