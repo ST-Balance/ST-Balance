@@ -103,7 +103,7 @@ python train.py -c config/PEMS08.py --gpus '0'
 ````shell
 python experiments/train.py -c config/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
 ````
-## LargeST Dataset
+## For LargeST Dataset
 
 ### Folder Structure
 ````shell
@@ -132,7 +132,7 @@ Example:
 ````shell
 python main.py --dataset SD --mode 'test'
 ````
-## Meteorology Dataset
+## For Meteorology Dataset
 
 ### Folder Structure
 ````shell
