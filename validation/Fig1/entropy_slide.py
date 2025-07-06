@@ -74,7 +74,7 @@ def calculate_joint_entropy(data, time_bin_method="fd", space_bin_method="fd"):
 
     joint_prob = joint_freq / np.sum(joint_freq)
 
-    joint_entropy = -np.nansum(joint_prob * np.log(joint_prob + 1e-9))  # 避免 log(0)
+    joint_entropy = -np.nansum(joint_prob * np.log(joint_prob + 1e-9))
     return joint_entropy
 
 
@@ -135,16 +135,15 @@ def main():
 
             T = 5
             if 'PEMS' in dataset:
-                T = 5  # 每个窗口包含10个时间步
+                T = 5  
             else:
                 T = 15
             days = i
             window_size = int(days * ((24 * 60) / T))
-            step_size = 12  # 每次滑动1个时间步
+            step_size = 12 
 
             print(i)
             print(dataset)
-            # 计算滑动窗口时间熵、空间熵和联合熵
             time_entropies, space_entropies, joint_entropies = sliding_window_entropy(data, window_size, step_size)
             print(np.mean(time_entropies))
             print(np.mean(space_entropies))
