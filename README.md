@@ -79,7 +79,7 @@ Meteorology:
 * We use the original authors' publicly available code [Corrformer](https://github.com/thuml/Corrformer) as the experimental baseline.
 
 Epidemics:
-* The raw data originates from [CSSE](https://github.com/CSSEGISandData/COVID-19) and is processed within the BasicTS framework (see the Covid19 folder).We also use the [STSGT](https://github.com/soumbane/STSGT), [SAB‑GNN]([https://github.com/soumbane/STSGT](https://github.com/Emory-Melody/EpiLearn/tree/main/epilearn/models/SpatialTemporal)) and [EpiLearn](https://github.com/Emory-Melody/EpiLearn/tree/main/epilearn/models/SpatialTemporal) as the experimental baseline.
+* The raw data originates from [CSSE](https://github.com/CSSEGISandData/COVID-19) and is processed within the BasicTS framework (see the Covid19 folder). We also use the [STSGT](https://github.com/soumbane/STSGT), [SAB‑GNN]([https://github.com/soumbane/STSGT](https://github.com/Emory-Melody/EpiLearn/tree/main/epilearn/models/SpatialTemporal)) and [EpiLearn](https://github.com/Emory-Melody/EpiLearn/tree/main/epilearn/models/SpatialTemporal) as the experimental baseline.
 
 ## Dataset
 Except for the epidemic dataset, the raw and processed data can be accessed through the links above. Additionally, all processed datasets are available at this [link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV).
