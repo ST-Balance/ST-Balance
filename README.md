@@ -67,7 +67,7 @@ We provide one of the smallest datasets, PEMS08, as a demo, which is located in 
 
 We have placed our own training logs in the checkpoints directory as a reference. The estimated training time is 104 minutes.
 
-## Instructions for use
+## Reproduction of Baseline Methods
 
 To ensure a fair comparison of methods across different domains, we adopt various experimental frameworks for evaluation.
 
