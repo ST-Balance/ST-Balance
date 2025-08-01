@@ -1,8 +1,0 @@
-python entropy_slide.py --dataset "['PEMS03']" --horizon "[0.042, 1, 7, 14]"
-python entropy_slide.py --dataset "['PEMS04']" --horizon "[0.042, 1, 7, 14]"
-python entropy_slide.py --dataset "['PEMS07']" --horizon "[0.042, 1, 7, 14]"
-python entropy_slide.py --dataset "['PEMS08']" --horizon "[0.042, 1, 7, 14]"
-python entropy_slide.py --dataset "['SD']" --horizon "[0.042, 1, 7, 14]"
-python entropy_slide.py --dataset "['GBA']" --horizon "[0.042, 1, 7, 14]"
-python entropy_slide.py --dataset "['GLA']" --horizon "[0.042, 1, 7, 14]"
-python entropy_slide.py --dataset "['CA']" --horizon "[0.042, 1, 7, 14]"
