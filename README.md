@@ -156,25 +156,3 @@ Note: Parameter configurations can be viewed in run.py.
 ````shell
 python run.py --is_training 0 --data Global_Wind --root_path ./dataset/global_wind/ --pos_filename ./dataset/global_wind/ --model_id 0 --des Exp --itr 1
 ````
-## FOR Covid19 Dataset
-### Folder Structure
-````shell
--Covid19
-  -datasets 
-    -Covid19_US
-````
-### Operations
-Once the dataset has been downloaded and placed in the Covid19 folder, all operations should be conducted within this folder. [DataLink](https://drive.google.com/file/d/16PGCd2C4tgU5PbMeQXOSITx5cm-gRkRd/view?usp=drive_link) 
-
-#### Training
-````shell
-python train.py -c config/${CONFIG_NAME}.py --gpus '0'
-````
-Example:
-````shell
-python train.py -c config/Covid19_US.py --gpus '0'
-````
-#### Testing
-````shell
-python experiments/train.py -c config/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
-````
