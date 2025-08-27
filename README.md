@@ -78,6 +78,9 @@ Traffic Flow:
 Meteorology:
 * We use the original authors' publicly available code [Corrformer](https://github.com/thuml/Corrformer) as the experimental baseline.
 
+Epidemics:
+* The raw data originates from [CSSE](https://github.com/CSSEGISandData/COVID-19) and is processed within the BasicTS framework (see the Covid19 folder). We also use the [STSGT](https://github.com/soumbane/STSGT), [SAB‑GNN](https://github.com/JiaweiXue/MultiwaveCovidPrediction) and [EpiLearn](https://github.com/Emory-Melody/EpiLearn/tree/main/epilearn/models/SpatialTemporal) as the experimental baseline.
+
 ## Dataset
 Except for the epidemic dataset, the raw and processed data can be accessed through the links above. Additionally, all processed datasets are available at this [link](https://drive.google.com/drive/folders/11xEsQldS-MmVpq8VzIg9HEEhvCUQ7-QV).
 
@@ -152,4 +155,26 @@ Note: Parameter configurations can be viewed in run.py.
 #### Testing
 ````shell
 python run.py --is_training 0 --data Global_Wind --root_path ./dataset/global_wind/ --pos_filename ./dataset/global_wind/ --model_id 0 --des Exp --itr 1
+````
+## FOR Covid19 Dataset
+### Folder Structure
+````shell
+-Covid19
+  -datasets 
+    -Covid19_US
+````
+### Operations
+Once the dataset has been downloaded and placed in the Covid19 folder, all operations should be conducted within this folder. [DataLink](https://drive.google.com/file/d/16PGCd2C4tgU5PbMeQXOSITx5cm-gRkRd/view?usp=drive_link) 
+
+#### Training
+````shell
+python train.py -c config/${CONFIG_NAME}.py --gpus '0'
+````
+Example:
+````shell
+python train.py -c config/Covid19_US.py --gpus '0'
+````
+#### Testing
+````shell
+python experiments/train.py -c config/${CONFIG_NAME}.py --ckpt ${CHECKPOINT_PATH}.pt --gpus '0'
 ````
